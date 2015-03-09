@@ -20,7 +20,7 @@ str(data)
 
 2. The data can be summarized as follows
 <!-- html table generated in R 3.1.2 by xtable 1.7-4 package -->
-<!-- Sun Mar  8 22:19:57 2015 -->
+<!-- Sun Mar  8 22:27:54 2015 -->
 <table border=1>
 <tr> <th>     steps </th> <th>      date </th> <th>    interval </th>  </tr>
   <tr> <td> Min.   :  0.00   </td> <td> Min.   :2012-10-01   </td> <td> Min.   :   0.0   </td> </tr>
@@ -156,7 +156,7 @@ numberOfMissingValues <- sum(complete)
 
 **There are 2304 missing values in the data set.**
 
-2. We use the average of the interval to fill in the missing values
+2. We use the average of the interval to fill in the missing values as the strategy for filling in all of the missing values in the dataset
 
 ```r
 completedData <- data

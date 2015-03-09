@@ -67,7 +67,7 @@ str(data)</code></pre>
 ##  $ date    : Date, format: &quot;2012-10-01&quot; &quot;2012-10-01&quot; ...
 ##  $ interval: num  0 5 10 15 20 25 30 35 40 45 ...</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>The data can be summarized as follows <!-- html table generated in R 3.1.2 by xtable 1.7-4 package --> <!-- Sun Mar  8 22:19:57 2015 -->
+<li>The data can be summarized as follows <!-- html table generated in R 3.1.2 by xtable 1.7-4 package --> <!-- Sun Mar  8 22:27:54 2015 -->
 <table border="1">
 <tr> <th>     
 steps
@@ -226,7 +226,7 @@ intervalWithMaxMeanSteps &lt;- meanStepsPerInterval$interval[index]</code></pre>
 numberOfMissingValues &lt;- sum(complete)</code></pre>
 <p><strong>There are 2304 missing values in the data set.</strong></p>
 <ol start="2" style="list-style-type: decimal">
-<li>We use the average of the interval to fill in the missing values</li>
+<li>We use the average of the interval to fill in the missing values as the strategy for filling in all of the missing values in the dataset</li>
 </ol>
 <pre class="r"><code>completedData &lt;- data
 completedData[complete, ]$steps &lt;- vapply(completedData[complete, ]$interval,

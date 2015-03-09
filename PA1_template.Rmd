@@ -159,7 +159,7 @@ numberOfMissingValues <- sum(complete)
 
 **There are `r as.character(numberOfMissingValues)` missing values in the data set.**
 
-2. We use the average of the interval to fill in the missing values
+2. We use the average of the interval to fill in the missing values as the strategy for filling in all of the missing values in the dataset
 ```{r fillMissingValues,results='hide'}
 completedData <- data
 completedData[complete, ]$steps <- vapply(completedData[complete, ]$interval,
